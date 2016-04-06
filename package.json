@@ -1,0 +1,29 @@
+{
+  "name": "com-intel-security-crosswalk-extension",
+  "version": "2.0.0",
+  "description": "App Security API Crosswalk Extension",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AppSecurityApi/com-intel-security-crosswalk-extension.git"
+  },
+  "keywords": [
+    "Intel",
+    "intel.security",
+    "intel.security.Services",
+    "Security Services",
+	"Crosswalk",
+	"Crosswalk extension",
+	"Intel XDK",
+	"encryption",
+	"cryptography",
+	"app",
+	"security",
+	"api"
+  ],
+  "author": "Dan Shmul (Intel Corporation)",
+  "license": "SEE LICENSE IN LICENSE",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/AppSecurityApi/com-intel-security-crosswalk-extension/issues"
+  }
+}
