@@ -45,8 +45,7 @@ Crosswalk extension
 	
 	Known Issues (Crosswalk extension only)
 	============
-	1. API calls are synchronous (no support for parallel execution in the current version). 
-	2. The extension creates files in the user's AppData (example: C:\Users\MyUser\AppData\Local\TestApp_xsapi), the application should remove the items during uninstall operation.
+	1. The extension creates files in the user's AppData (example: C:\Users\MyUser\AppData\Local\TestApp_xsapi), the application should remove the items during uninstall operation.
 
 Cordova plugin 
 ==============
