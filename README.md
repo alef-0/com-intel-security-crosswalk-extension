@@ -50,4 +50,4 @@ Crosswalk extension
 
 Cordova plugin 
 ==============
-	For Cordova plugin please see https://github.com/AppSecurityApi/com-intel-security-cordova-plugin.git
+For Cordova plugin please see https://github.com/AppSecurityApi/com-intel-security-cordova-plugin.git
