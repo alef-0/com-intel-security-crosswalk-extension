@@ -15,28 +15,17 @@ Additionally please see our demo applications:
 Crosswalk extension
 ===================
 	
-	You can find the extension dll file (IntelSecurityServicesExtension.dll) and the JavaScript file (appSecurityApi_XW.js) in windows_crosswalk directory
-	
+	The project contains 'src' folder which contains the App Security API extension (the executable file) and 'www' folder which contains the javascript API.
+		
 	How to use the extension
 	========================
-		Include the appSecurityApi_XW.js file from windows_crosswalk directory into your application, you have two modes to work with the dll:
+		Include appSecurityApi.js and q.js files www directory in your web application. 
+		Then, create a folder within your root directory of the web app 'AppSecurityAPI' (or any other name, but keep in mind to set the same value in step 1.a) and copy the entire content of 'src' folder into it.
 		
-		Crosswalk Shared Mode 
-		=====================
-		1. From the folder includes index.html
-			python -m http.server 8000
-		2. From Crosswalk executable folder - 'PathToDLL' appears in the command line below denotes the location where Crosswalk extension 'IntelSecurityServicesExtension.dll' is placed
-			xwalk.exe --allow-external-extensions-for-remote-sources --external-extensions-path=PathToDLL http://localhost:8000
-		3. See more details in https://crosswalk-project.org/documentation/windows/extensions.html 
-	
-		MSI Installer
-		=============
-		Add the extension to the manifest file (in manifest file: 'xwalk_extensions':'IntelSecurityServicesExtension.dll' 
-			details in https://github.com/crosswalk-project/crosswalk-app-tools/blob/master/manifest.md)
-		Create a MSI installer: crosswalk-pkg -p windows <path> 
-			details in https://github.com/crosswalk-project/crosswalk-app-tools
-			
-	
+		For creating the MSI please:		
+			a. Add the extension to the manifest file by editing the value of key 'xwalk_extensions' in manifest file: {'xwalk_extensions':'AppSecurityAPI'}. More details in https://github.com/crosswalk-project/crosswalk-app-tools/blob/master/manifest.md)
+			b. Create a MSI installer by openning command line and executing 'crosswalk-pkg -p windows <path>' details in https://github.com/crosswalk-project/crosswalk-app-tools
+
 	Redistributable
 	===============
 	
@@ -46,6 +35,13 @@ Crosswalk extension
 	Known Issues (Crosswalk extension only)
 	============
 	1. The extension creates files in the user's AppData (example: C:\Users\MyUser\AppData\Local\TestApp_xsapi), the application should remove the items during uninstall operation.
+
+Hardware Root Of Trust
+======================
+The software stack can utilize Intel(R) platform security technologies, under the hood, with no need to change the API at the application level.
+This enhancement is supported on Intel(R) platforms that have Intel(R) Active Management Technology hardware enabled and 
+ also have the supporting software stack on the platform.
+For more information on the security technologies, please refer to https://software.intel.com/en-us/amt-sdk
 
 Cordova plugin 
 ==============

@@ -63,6 +63,7 @@ var errorMessageMap = {
     34: 'Invalid argument size',
     35: 'Incorrect state',
     36: 'Action aborted',
+    37: 'Software component is missing',
     1000: 'Internal error occurred',
 };
 
