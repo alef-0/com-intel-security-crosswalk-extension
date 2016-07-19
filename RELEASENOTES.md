@@ -1,3 +1,18 @@
+2.0.2 (July, 2016)
+	In this new version we added improved security measures and protections for Application's Data (Integrity and Confidentiality), when using the API.
+	'App Security Api' software enables improved protections through the use of Hardware Root of Trust on Intel platforms with 
+	 Intel(R) Active Management Technology supported and enabled.
+
+	Minor bug fixes	
+	
+	Known Issues:
+	- Creating big SecureData items returns 'Internal Error' or crashes instead of returning 'Memory allocation failure' error.
+	
+	
+	The extension was tested on:
+	- Windows desktop x64 devices
+	- Intel platform with Intel(R) CSME technology and software stack, running Windows desktop x64
+	
 2.0.1 (July, 2016)
 	In this new version we added improved security measures and protections for Application's Data (Integrity and Confidentiality), when using the API.
 	'App Security Api' software enables improved protections through the use of Hardware Root of Trust on Intel platforms with 
